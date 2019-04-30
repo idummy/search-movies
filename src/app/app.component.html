@@ -1,0 +1,45 @@
+<!-- for search -->
+<div class="upper-container">
+  <label for="search-input">Title:</label>
+  <input
+    [(ngModel)]="searchterm"
+    #searchInput="ngModel"
+    id="search-input"
+    name="search-input"
+    type="text"
+    class="search-input"
+    placeholder="Please enter movie title you want to find"
+    (keyup.enter)="search()"
+  />
+
+  <button class="search-btn" (click)="search()">Search</button>
+</div>
+
+<h3>
+  Searching :
+  {{ searchterm | json }}
+</h3>
+
+<hr />
+<!-- for results -->
+
+<div class="result-container" *ngFor="let movie of movies">
+  <div class="poster-container">
+    <div *ngIf= "movie.Poster != 'N/A'  else NAPoster">
+        <img src={{movie.Poster}} alt="Poster not loaded! Server Error: code 403 (Forbidden).">
+    </div>
+    <ng-template #NAPoster>
+      <img src="assets/images/no-poster-available.jpg" alt="poster not available">
+    </ng-template>
+  </div>
+  <div>Title</div>
+  <div>{{movie.Title}}</div>
+  <div>Year</div>
+  <div>{{movie.Year}}</div>
+  <div>Imdb Id</div>
+  <div>{{movie.imdbID}}</div>
+  <div>Type</div>
+  <div>{{movie.Type}}</div>
+  
+</div>
+

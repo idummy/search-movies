@@ -1,0 +1,7 @@
+http://www.omdbapi.com/?4d460387=&
+
+apikey = "4d460387"
+
+// valid example of api call "http://www.omdbapi.com/?apikey=4d460387&t=batman"
+
+//  = this.api + "?" + "apikey" + "=" + this.apiKey + "&";
