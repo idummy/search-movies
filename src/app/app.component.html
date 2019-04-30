@@ -1,3 +1,4 @@
+<div class="main-container">
 <!-- for search -->
 <div class="upper-container">
   <label for="search-input">Title:</label>
@@ -22,7 +23,7 @@
 
 <hr />
 <!-- for results -->
-<div class="large-container">
+
   <div class="result-container" *ngFor="let movie of movies">
     <div class="poster-container">
       <div *ngIf="movie.Poster != 'N/A'; else NAPoster">

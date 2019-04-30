@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik");
 
+.main-container{
+  background-image: linear-gradient(to right, #000000,#434343,#000000);
+  margin: auto 20rem;
+  padding-left: 10rem;
+  padding-right: 10rem; 
+}
 .upper-container {
   background-color: lightgray;
   height: 3em;
   text-align: center;
-  font-family: Rubic;
 }
 
 .search-input {
@@ -16,7 +21,7 @@
 
 .search-btn{
   padding: 0.5em 0.5em;
-  background-color: aquamarine
+  background-color: rgb(0, 219, 146)
 }
 
 hr{
@@ -31,16 +36,17 @@ hr{
   grid-template-rows:  auto;
   grid-auto-flow:row;
   align-items: auto;
-  margin: 0.5em;
   border-radius: 15px;
-  padding: 10px;
-  font-family: Rubic;
+  color: #faebd7;
+  font-family: Helvetica;
 }
 .result-container:nth-child(even){
   background-color: rgb(222, 222, 222);
+  background-image: linear-gradient(to right, #283048, #859398);
 }
 .result-container:nth-child(odd){
   background-color: rgb(192, 192, 192);
+  background-image: linear-gradient(to right, #16222A, #3A6073);
 }
 .poster-container{
   grid-column-start:1;
@@ -52,7 +58,7 @@ hr{
 .poster-container div{
   width: 133px;
   height: 200px;
-  background-image: linear-gradient(to bottom, white, grey);
+  background-image: linear-gradient(to right, #c31432, #240b36);
 }
  .poster-container img{
    width: 133px;
@@ -61,33 +67,13 @@ hr{
  }
  
  a{
-   font-family: Rubic;
+   font-family: Helvetica;
    font-size: 1.3rem;
-   color: black;
+   color: #faebd7;
    text-decoration: none;
  }
 
 a:hover{
-  color: olivedrab;
+  color: rgb(238, 75, 0);
+  background-image: linear-gradient(to rignt, rgb(250, 162, 0),rgb(221, 85, 108));
 }
-/* .list-item-wrap{
-  padding: 1em;
-  height:5em;
-  width: 60%;
-  display: inline-block
-}
-
-div.list-item-info{
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-template-rows: 1.5em 1.5em 1.5em 1.5em;
-}
-
-div.list-item-img{
- background-color: antiquewhite
-}
-
-.list-item-img img{
-  width: 300px;
-  height: 300px;
-} */
